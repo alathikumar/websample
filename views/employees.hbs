@@ -1,0 +1,52 @@
+<div class="row">
+	{{#unless data}}
+		<div class="col-md-12 text-center">
+			<div class="not-found-block">
+				<strong>{{message}}</strong>
+			</div>
+		</div>
+	{{else}}
+		<main class="col-md-12">
+
+			<!-- Start your code here -->
+
+			<table class="table" border='1'>
+				<thead>
+					<tr class="rowHeader-style">
+						<td class="table-header header-font-style">Employee Num</td>
+						<td class="table-header header-font-style">Full Name</td>
+						<td class="table-header header-font-style">Email</td>
+						<td class="table-header header-font-style">Address</td>
+						<td class="table-header header-font-style">Manager ID</td>
+						<td class="table-header header-font-style">Status</td>
+						<td class="table-header header-font-style">Department</td>
+						<td class="table-header header-font-style">Hired On</td>
+					</tr>
+				</thead>
+				<tbody>
+					{{#each data}}
+					<tr class="rowContent-style">
+						<td class="table-content content-font-style">{{employeeNum}}</td>
+						<td class="table-content content-font-style">
+							<a href="/employee/{{employeeNum}}">{{firstName}} {{lastName}}</a>
+						</td>
+						<td class="table-content content-font-style">
+							<a href="mailto:{{email}}">{{email}}</a>
+						</td>
+						<td class="table-content content-font-style">{{addressStreet}}, {{addressCity}}, {{addressState}}
+							{{addressPostal}}</td>
+						<td class="table-content content-font-style">{{employeeManagerNum}}</td>
+						<td class="table-content content-font-style">{{status}}</td>
+						<td class="table-content content-font-style">
+							<a href="/employees?department={{department}}">{{department}}</a>
+						</td>
+						<td class="table-content content-font-style">{{hireDate}}</td>
+					</tr>
+					{{/each}}
+				</tbody>
+			</table>
+
+			<!-- End your code here  -->
+		</main>
+		{{/unless}}
+</div>

@@ -1,0 +1,226 @@
+<div class="row">
+	<main class="col-md-12">
+
+		<!-- Start your code here -->
+		<div class="row">
+			<div class="col-md-12">
+				<div class="items-block">
+					<h2>Tables</h2>
+				</div>
+			</div>
+			<div class="col-md-6">
+					<table width="100%" border="1">
+						<caption>Monthly Expenditure</caption>
+						<thead>
+							<tr>
+								<th>Month</th>
+								<th>Items</th>
+								<th>Expenditure</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td rowspan="2">January</td>
+								<td>Grocery</td>
+								<td>$200</td>
+							</tr>
+							<tr>
+								<td>Gas</td>
+								<td>$180</td>
+							</tr>
+							<tr>
+								<td rowspan="2">February</td>
+								<td>Grocery</td>
+								<td>$220</td>
+							</tr>
+							<tr>
+								<td>Gas</td>
+								<td>$160</td>
+							</tr>
+								<tr>
+									<td rowspan="2">March</td>
+									<td>Grocery</td>
+									<td>$150</td>
+								</tr>
+								<tr>
+									<td>Gas</td>
+									<td>$120</td>
+								</tr>
+							</tbody>
+						<tfoot>
+							<tr>
+								<td colspan="2">Total</td>
+								<td>$1300</td>
+							</tr>
+						</tfoot>
+					</table>
+			</div>
+			<div class="col-md-6">
+					<table border="1" width="100%">
+						<caption>XYZ Super Store</caption>
+						<thead> 
+							<tr> 
+								<th colspan="4">Farmers Market</th> 
+							</tr>  
+						</thead> 
+						<tbody> 
+							<tr> 
+								<th>Item</th> 
+								<th>Qty</th> 
+								<th>Price</th> 
+								<th>Cost</th> 
+							</tr> 
+							<tr> 
+								<td>Milk</td> 
+								<td>3</td> 
+								<td>3.99</td> 
+								<td>11.97</td> 
+							</tr> 
+							<tr>
+								<td>Bread</td> 
+								<td>1</td> 
+								<td>3</td> 
+								<td>3.00</td> 
+							</tr> 
+						</tbody> 
+						<tfoot> 
+							<tr> 
+								<th colspan="3">Subtotal</th> 
+								<td>14.97</td> 
+							</tr> 
+							<tr> 
+								<th colspan="2">Tax</th> 
+								<td>2%</td> 
+								<td>0.30</td> 
+							</tr> 
+							<tr> 
+								<th colspan="3">Grand Total</th> 
+								<td>$ 15.26</td> 
+							</tr> 
+						</tfoot> 
+					</table>
+			</div>
+			<div class="col-md-12">
+				<p>
+					HTML Tables are identified by <b>table</b> tag. It is the root of the a table.
+					It consist of several other tags such as <b>caption</b> tag which is used
+					for creating table captions. It is also know as title of the table. Rows are
+					identified by <b>tr</b> tag while columns by <b>td</b>. Another one is <b>th</b>
+					tag which identifies the Header cells. HTML table usually groups its content such as
+					<b>thead</b> for identifying the header content, <b>tbody</b> mainly for body content
+					and <b>tfoot</b> for footer content. Also, note that <b>rowspan</b> attribute is used in
+					conjuction for specifying the number of rows the cell should span. Similarly inorder to
+					specify the number of columns to span, we use <b>colspan</b> attribute.<br>
+					The above samples shows the use of all the properites to display the tables. Table 1 consist
+					of Monthly Expenditure details whereas Table 2 depicts a Billing Details from a store.
+				</p>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-12">
+				<div class="items-block">
+					<h2>Lists</h2>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<ol type="a">
+					<li>Introduction</li>
+					<li>
+						Chapter 1
+						<ul>
+							<li>Section One</li>
+							<li>Section Two</li>
+							<li>Section Three</li>
+						</ul>
+					</li>
+					<li>Chapter 2</li>
+					<li>Chapter 3</li>
+				</ol>
+			</div>
+			<div class="col-md-12">
+				<p>
+					List are commonly used to group related informations in a 
+					well structured manner which makes it more accessible.
+					The above example shows how Lists can be used to implement
+					the Index of a Book, such that dividing into Chapters and 
+					Sections. <b>ul</b> tag is used to represent Un-ordered list
+					while <b>ol</b> for Ordered list. Each item is represented by
+					<b>li</b> tag inside <b>ul</b> or <b>ol</b>
+				</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="items-block">
+					<h2>Images</h2>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<img class="img-class" src="https://images.unsplash.com/photo-1571751857110-4d580a33fa1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1498&q=80" alt="Beautiful Green Light">
+			</div>
+			<div class="col-md-4">
+				<img class="img-class" src="https://cdn.pixabay.com/photo/2017/01/24/03/53/architecture-2004487_960_720.jpg" alt="Architecture Photography">
+			</div>
+			<div class="col-md-4">
+				<img class="img-class" src="https://cdn.pixabay.com/photo/2019/09/30/14/51/squirrel-4515962_960_720.jpg" alt="Nature Photography">
+			</div>
+			<div class="col-md-12">
+				<p>
+					Images in HTML are represented using <b>img</b> tag. It has Two
+					attributes <b>src</b> used to specify the source of the image file
+					and <b>alt</b> to provide an alternative text for the image.
+				</p>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-12">
+				<div class="items-block">
+					<h2>Audio</h2>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<audio controls>
+					<source src="https://ict.senecacollege.ca/~patrick.crawford/shared/fall-2019/web700/A3/Track03.mp3" type="audio/mp3">
+					<source src="https://ict.senecacollege.ca/~patrick.crawford/shared/fall-2019/web700/A3/Track03.ogg" type="audio/ogg">
+					<p>Seems like your browser doesn't support HTML5 audio</p>
+				</audio>
+			</div>
+			<div class="col-md-12">
+				<p>
+					<b>audio</b> tag specifies a standard way to render audio in web page.
+					<b>controls</b> attribute add play, pause and volume. <b>source</b> tag specify
+					the audio files which browser may choose.
+				 </p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="items-block">
+					<h2>Video</h2>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<video width="320" height="240" controls>
+					<source src="https://ict.senecacollege.ca/~patrick.crawford/shared/fall-2019/web700/A3/movie.mp4" type="video/mp4">
+					<source src="https://ict.senecacollege.ca/~patrick.crawford/shared/fall-2019/web700/A3/movie.ogg" type="video/ogg">
+					<source src="https://ict.senecacollege.ca/~patrick.crawford/shared/fall-2019/web700/A3/movie.webm" type="video/webm">
+					<p>Seems like your browser doesn't support HTML5 video</p>
+				</video>
+			</div>
+			<div class="col-md-12">
+				<p>
+					<b>video</b> tag specifies a standard way to render the video files in a web page.
+					Similar to <b>auido</b> tag, <b>video</b> tag also has <b>controls</b> attribute
+					which helps to add video controls. <b>source</b> tag specifies the video files which
+					the browser can choose.
+				</p>
+			</div>
+		</div>			
+		
+		<!-- End your code here  -->
+
+	</main>
+</div>

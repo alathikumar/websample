@@ -1,0 +1,36 @@
+<div class="row">
+	{{#unless data}}
+		<div class="col-md-12 text-center">
+			<div class="not-found-block">
+				<strong>{{message}}</strong>
+			</div>
+		</div>
+	{{else}}
+		<main class="col-md-12">
+
+			<!-- Start your code here -->
+			<table class="table" border='1'>
+				<thead>
+					<tr class="rowHeader-style">
+						<td class="table-header header-font-style">Department Number</td>
+						<td class="table-header header-font-style">Department Name</td>
+					</tr>
+				</thead>
+				<tbody>
+					{{#each data}}
+					<tr class="rowContent-style">
+						<td class="table-content content-font-style">
+							<a href="/department/{{departmentId}}">{{departmentId}}</a>
+						</td>
+						<td class="table-content content-font-style">
+							<a href="/employees?department={{departmentId}}">{{departmentName}}</a>
+						</td>
+					</tr>
+					{{/each}}
+				</tbody>
+			</table>
+
+			<!-- End your code here  -->
+		</main>
+	{{/unless}}
+</div>
